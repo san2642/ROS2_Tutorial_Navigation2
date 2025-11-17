@@ -267,4 +267,3 @@ This tutorial allows you to:
 Happy navigating!
 
 ```
-

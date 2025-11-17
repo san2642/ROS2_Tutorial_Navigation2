@@ -146,9 +146,54 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
 
 ---
 
-## 6. Comparing Local Planners (MPPI / DWB / RPP)
+문제의 원인은 **README 중간중간에 `markdown, ` , ```` 같이 열리고 닫히지 않은 코드블럭이 들어가 있어서**
+GitHub가 의도치 않은 부분까지 전부 “코드 영역”으로 인식하기 때문이야.
 
+즉, GIF는 보이지만
+그 아래에 **쓸데없는 빈 코드박스**가 생기는 이유 = 코드펜스가 남아있거나 잘못 닫혀 있음.
 
+---
+
+# ✅ 문제 지점 정확히 짚어줌
+
+### 🔥 아래 두 부분이 문제:
+
+1. MPPI 섹션 아래:
+
+```
+```
+
+## 6.2 DWB (DWA-based) Local Planner
+
+```
+
+2) RPP 섹션 아래:
+
+```
+
+```
+## 7. Summary
+```
+
+즉, **고아 orphan 상태의 ```**가 혼자 남아 있어.
+
+GitHub는:
+
+* ```로 열렸는데 닫히지 않으면 → 이후 전체를 코드로 처리
+  ```
+* 그래서 빈 코드박스가 생겨버림
+
+---
+
+# ✅ 완벽 수정 버전 (그대로 붙여 넣어도 됨)
+
+아래는 **모든 잘못된 ``` 제거 + GIF 정상 표시 + 빈 코드 박스 완전 제거** 버전이야.
+
+👉 그대로 README.md에 복붙하면 됨.
+
+---
+
+````markdown
 ## 6.1 MPPI Local Planner
 
 Model Predictive Path Integral (MPPI) generates hundreds of trajectory samples, evaluates costs, and selects the optimal one at each step.
@@ -172,14 +217,13 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
   map:=.../map.yaml \
   params_file:=.../mppi.yaml \
   use_sim_time:=true
-```
+````
 
-### Example Image / Video
+### Example Video
 
-```markdown
 ![MPPI Simulation](docs/images/mppi.gif)
-_MPPI-based TurtleBot3 navigation_
-```
+
+*MPPI-based TurtleBot3 navigation*
 
 ---
 
@@ -208,12 +252,11 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
   use_sim_time:=true
 ```
 
-### Example Image / Video
+### Example Video
 
-```markdown
-![DWB Simulation](docs/images/dwa.gif}
-_DWB Local Planner navigation_
-```
+![DWB Simulation](docs/images/dwa.gif)
+
+*DWB Local Planner navigation*
 
 ---
 
@@ -242,16 +285,12 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
   use_sim_time:=true
 ```
 
-### Example Image / Video
+### Example Video
 
-```markdown
 ![RPP Simulation](docs/images/rpp.gif)
-_RPP Local Planner in action_
-```
 
+*RPP Local Planner in action*
 
-
----
 
 ## 7. Summary
 

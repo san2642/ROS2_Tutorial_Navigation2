@@ -177,7 +177,7 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
 ### Example Image / Video
 
 ```markdown
-![MPPI Simulation](docs/images/mppi_sim.gif)
+![MPPI Simulation](docs/images/mppi.gif)
 _MPPI-based TurtleBot3 navigation_
 ```
 
@@ -211,7 +211,7 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
 ### Example Image / Video
 
 ```markdown
-![DWB Simulation](docs/images/dwb_sim.gif)
+![DWB Simulation](docs/images/dwa.gif)
 _DWB Local Planner navigation_
 ```
 
@@ -245,7 +245,7 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
 ### Example Image / Video
 
 ```markdown
-![RPP Simulation](docs/images/rpp_sim.gif)
+![RPP Simulation](docs/images/rpp.gif)
 _RPP Local Planner in action_
 ```
 

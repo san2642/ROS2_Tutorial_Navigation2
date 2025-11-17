@@ -242,7 +242,7 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
 
 *RPP Local Planner in action*
 
-
+---
 ## 7. Summary
 
 This tutorial allows you to:

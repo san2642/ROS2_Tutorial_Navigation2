@@ -211,7 +211,7 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
 ### Example Image / Video
 
 ```markdown
-![DWB Simulation](docs/images/dwa.gif)
+![DWB Simulation](docs/images/dwa.gif}
 _DWB Local Planner navigation_
 ```
 

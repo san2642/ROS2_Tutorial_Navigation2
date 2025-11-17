@@ -174,7 +174,7 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
 
 ![MPPI Simulation](docs/images/mppi.gif)
 
-*MPPI-based TurtleBot3 navigation*
+*MPPI Local Planner navigation*
 
 ---
 
@@ -240,7 +240,7 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py \
 
 ![RPP Simulation](docs/images/rpp.gif)
 
-*RPP Local Planner in action*
+*RPP Local Planner navigation*
 
 ---
 ## 7. Summary

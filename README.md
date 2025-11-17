@@ -253,7 +253,7 @@ _RPP Local Planner in action_
 
 ---
 
-## 8. Summary
+## 7. Summary
 
 This tutorial allows you to:
 

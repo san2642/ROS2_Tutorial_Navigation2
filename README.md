@@ -4,6 +4,17 @@
 This tutorial demonstrates how to set up the ROS2 Navigation2 (Nav2) stack using TurtleBot3 Waffle in Gazebo, and how to compare different Local Planners such as MPPI, RPP, and DWB.  
 The guide follows a clean, step-by-step structure from workspace creation to the final navigation run.
 ```
+
+## 📚 Additional Resources
+
+### 🎥 Lecture Video Playlist  
+Full lecture video series explaining the Navigation2 tutorial step-by-step:  
+📌 https://youtube.com/playlist?list=PLR4lJcpVpJSEiJUTqWDRhnwcteonD2tSf&si=-ajkJ8IyBLEh98-T
+
+### 📝 Tutorial PPT Slides  
+Slides used throughout the course (Google Drive folder):  
+📌 https://drive.google.com/drive/folders/1XoZbC4QC7uE7bXU2JYIVYcnH9F3qI1-M?usp=sharing
+
 ---
 
 ## 1. Environment
